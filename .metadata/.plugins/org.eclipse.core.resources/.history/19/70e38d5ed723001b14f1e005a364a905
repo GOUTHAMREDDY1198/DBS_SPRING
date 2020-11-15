@@ -1,0 +1,7 @@
+Users submitted
+
+<c:forEach var="emp" items="${ins}">
+		
+			<li>${emp}</li>
+			
+		</c:forEach>

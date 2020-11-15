@@ -1,0 +1,13 @@
+INDEX VERSION 1.4+D:\DBS_Training\JAVA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4219279280.index
+2285841795.index
+477975101.index
+193700590.index
+3210458142.index
+1713424735.index
+1364996701.index
+1510650351.index
+755859833.index
+3271811157.index
+3010008282.index
+1567061494.index

@@ -1,0 +1,86 @@
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="STD_one_to_one")
+
+public class Student {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@PrimaryKeyJoinColumn
+	private int id;
+	
+	private String firstName;
+	private String lastName;
+	private int marks;
+	
+	@OneToOne(targetEntity=Address.class,cascade=CascadeType.ALL)
+	private Address address;
+	
+	
+	public Employee() {}
+	
+	public Employee(int id, String fn, String ln, int m) {
+		this.id=id;
+		this.firstName=fn;
+		this.lastName=ln;
+		this.marks=m;
+	}
+	
+	public Employee(int id, String fn, String ln, int sal,Address add) {
+		this.id=id;
+		this.firstName=fn;
+		this.lastName=ln;
+		this.salary=sal;
+		this.address=add;
+	}
+	
+	public int getId() {
+		return this.id;
+	}
+	public int getSalary() {
+		return this.salary;
+	}
+	
+	public String getFirstName() {
+		return this.firstName;
+	}
+	
+	public String getLastName() {
+		return this.lastName;
+	}
+	
+	public void setId(int id) {
+		this.id=id;
+	}
+	
+	public void setSalary(int sal) {
+		this.salary=sal;
+	}
+	
+	public void setFirstName(String fn) {
+		this.firstName=fn;
+	}
+	
+	public void setLastName(String ln) {
+		this.lastName=ln;
+	}
+	
+	public Address getAddress() {
+		return this.address;
+	}
+	
+	public void setAddress(Address add) {
+		this.address=add;
+	}
+	
+	
+	
+	
+}

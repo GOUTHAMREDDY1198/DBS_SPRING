@@ -1,0 +1,13 @@
+package insurance;
+
+public class Insurance {
+
+	private int policyNo;
+	private String name;
+	private int tenure;
+	private int amount;
+	
+	
+	
+	
+}

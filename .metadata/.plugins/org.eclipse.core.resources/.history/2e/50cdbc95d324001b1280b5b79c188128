@@ -1,0 +1,9 @@
+
+<h2>Student Details</h2>
+<form action="insert" method="get">
+Name:<input type="text" name="name"/>
+Id:<input type="text" name="policy"/>
+Marks:<input type="text" name="cost"/>
+<input type="submit" value="Insert" />
+
+</form>

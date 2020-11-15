@@ -1,0 +1,55 @@
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="ADDRESS_one_one")
+public class College {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@PrimaryKeyJoinColumn
+	private int id;
+	private String name;
+	
+	@OneToMany(targetEntity=Student.class,cascade=CascadeType.ALL)
+	private Student student;
+	
+	public College() {}
+	public College(String name,int id) {
+		// TODO Auto-generated constructor stub
+		this.id=id;
+		this.name=name;
+	
+	}
+
+	public int getId() {
+		return this.id;
+	}
+	
+	public void setId(int id) {
+		this.id=id;
+	}
+	
+	public String getname() {
+		return this.name;
+	}
+	
+	public void setName(String name) {
+		this.name=name;
+	}
+	
+	public void setstudent(Student s) {
+		this.student=s;
+	}
+	
+	public Student getStudent() {
+		return this.student;
+	}
+	
+	
+}

@@ -1,0 +1,49 @@
+package com.goutham.common.controller;
+
+import java.util.HashMap;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.goutham.common.model.Electricity;
+
+
+@RestController
+@RequestMapping("/Electricity")
+public class ElectricityController {
+	
+	static ArrayList <> users = new ArrayList<Electricity>();
+	@RequestMapping(value="/{id}",method=RequestMethod.GET)
+	public static void createUsers() {
+		Electricity e1= new Electricity (1,189,"11/11/2020");
+		Electricity e2 =new Electricity (2,254,"20/11/2020");
+		Electricity e3= new Electricity (1,354,"30/11/2020");
+	}
+	public String getMovie(@PathVariable int id) {
+		
+		
+		
+		Electricity emp=null;
+		
+		if(hm1.containsKey(id)) {
+			emp = hm1.get(id);
+		}
+		
+		emp.setGross_sal(emp.getBasic()+emp.getHra()+emp.getAllowance());
+		emp.setFinal_deductions((int)(emp.getDeductions()+(emp.getGross_sal()*0.2)));
+		emp.setTotal_sal(emp.getGross_sal()-emp.getFinal_deductions());
+		
+		return emp.toString();
+	
+	}
+	
+	@RequestMapping(value="/display",method=RequestMethod.POST)
+	public ResponseEntity<String> createEmployee(@RequestBody String name){
+		System.out.println(name);
+		return new ResponseEntity(HttpStatus.CREATED);
+	}
+}

@@ -1,0 +1,83 @@
+package com.goutham.common.model;
+
+public class Employee {
+	private int basic;
+	private int hra;
+	private int allowance;
+	private int deduction;
+	private int gross_sal;
+	private int final_deduction;
+	private int total_sal;
+	
+	public Employee() {}
+	
+	public Employee(int basic,int hra,int allowance,int deduction,int gross_sal,int final_deduction,int total_sal) {
+		this.basic=basic;
+		this.hra=hra;
+		this.allowance=allowance;
+		this.deduction=deduction;
+		this.gross_sal=gross_sal;
+		this.final_deduction=final_deduction;
+		this.total_sal=total_sal;
+		
+	}
+
+	public int getBasic() {
+		return basic;
+	}
+
+	public void setBasic(int basic) {
+		this.basic = basic;
+	}
+
+	public int getHra() {
+		return hra;
+	}
+
+	public void setHra(int hra) {
+		this.hra = hra;
+	}
+
+	public int getAllowance() {
+		return allowance;
+	}
+
+	public void setAllowance(int allowance) {
+		this.allowance = allowance;
+	}
+
+	public int getDeduction() {
+		return deduction;
+	}
+
+	public void setDeduction(int deduction) {
+		this.deduction = deduction;
+	}
+
+	public int getGross_sal() {
+		return gross_sal;
+	}
+
+	public void setGross_sal(int gross_sal) {
+		this.gross_sal = gross_sal;
+	}
+
+	public int getFinal_deduction() {
+		return final_deduction;
+	}
+
+	public void setFinal_deduction(int final_deduction) {
+		this.final_deduction = final_deduction;
+	}
+
+	public int getTotal_sal() {
+		return total_sal;
+	}
+
+	public void setTotal_sal(int total_sal) {
+		this.total_sal = total_sal;
+	}
+	
+
+	
+}

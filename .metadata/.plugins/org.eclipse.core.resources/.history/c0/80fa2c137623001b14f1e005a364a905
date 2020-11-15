@@ -1,0 +1,17 @@
+package com.sunsoft;
+
+
+@Controller
+public class HelloWorldController {
+	@RequestMapping("/welcome/{id1}")
+	public String helloWorld(@RequestParam("id") int id,@RequestParam("name") String name,@PathVariable("id1") int id1,Model m) {
+		String message="Given data ID: "+id+"Name: "+name+"Path Variable data :"+id1;
+		m.addAttribute("message",message);
+		m.addAttribute("test","test");
+		
+		return "welcomepage";
+				
+	}
+	
+
+}

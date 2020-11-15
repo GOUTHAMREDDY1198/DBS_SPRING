@@ -1,0 +1,28 @@
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+public class Client {
+	public static SessionFactory factory;
+	
+	public static void getSessionFactory() {
+		try {
+			Configuration conf = new Configuration().configure();
+			StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(conf.getProperties());
+			factory = conf.buildSessionFactory();
+		}catch(Throwable ex) {
+			System.err.println("Failed to create session object: "+ex);
+			throw new ExceptionInInitializerError(ex);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		try {
+			getSessionFactory();
+			Client c1= new Client();
+		}
+
+	}
+
+}

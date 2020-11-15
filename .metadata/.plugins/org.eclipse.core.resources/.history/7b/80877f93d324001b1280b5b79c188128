@@ -1,0 +1,8 @@
+
+<h2>Update Marks</h2>
+<form action="update" method="get">
+Id:<input type="text" name="policy"/>
+Marks:<input type="text" name="cost"/>
+<input type="submit" value="Insert" />
+
+</form>

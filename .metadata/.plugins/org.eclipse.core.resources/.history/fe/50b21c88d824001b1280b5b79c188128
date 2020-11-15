@@ -1,0 +1,4 @@
+<h2>Enter ID to delete</h2>
+<form action="delete" method="get">
+Id:<input type="text" name="policy"/>
+</form>

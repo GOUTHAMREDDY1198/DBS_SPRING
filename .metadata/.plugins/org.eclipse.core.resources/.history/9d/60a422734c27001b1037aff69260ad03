@@ -1,0 +1,42 @@
+package com.goutham.common.controller;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.goutham.common.model.User;
+
+
+
+@RestController
+@RequestMapping("/login")
+public class LoginController {
+	
+	static ArrayList <User> usersList = new ArrayList<User>();
+	static HashMap<Integer,User> usersMap = new HashMap<Integer,User>();
+	
+	
+	public static void createUsers() {
+		User u1= new User("Nani","Nani@123");
+		User u2= new User("Nani","Nani@123");
+		User u3= new User("Nani","Nani@123");
+	}
+	
+	@RequestMapping(value="/display",method=RequestMethod.POST)
+	public String createEmployee(@RequestBody String name ){
+		String username=name.split("&")[0].split("=")[1];
+		String password=name.split("&")[1].split("=")[1];
+		if(username.equals("goutham") && password.equals("1111") ) {
+			return "Successfully Logged in";
+		}
+		else {
+			return "Invalid Credentials";
+		}
+		
+		
+	}
+}

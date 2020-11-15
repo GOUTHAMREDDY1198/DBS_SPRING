@@ -1,0 +1,16 @@
+${message}
+
+ <table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>ID</th>
+    <th>Department</th>
+    <th>Designation</th>
+  </tr>
+  <tr>
+    <td>${name}</td>
+    <td>${id}</td>
+    <td>${dept}</td>
+    <td> ${desig} </td>
+  </tr>
+</table> 

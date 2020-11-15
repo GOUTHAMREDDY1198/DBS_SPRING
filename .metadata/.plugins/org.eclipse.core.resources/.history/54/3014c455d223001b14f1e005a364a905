@@ -1,0 +1,7 @@
+<form action="add" method="get">
+Name:<input type="text" name="name"/>
+Policy:<input type="text" name="policy"/>
+Cost:<input type="text" name="cost"/>
+<input type="submit" value="add" />
+<input type="submit" value="sub"/>
+</form>

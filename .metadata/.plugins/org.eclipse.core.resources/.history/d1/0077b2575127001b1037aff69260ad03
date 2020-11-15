@@ -1,0 +1,61 @@
+package com.goutham.common.controller;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+
+
+
+@RestController
+@RequestMapping("/login")
+public class LoginController {
+	static ArrayList <User> usersList = new ArrayList<User>();
+	static HashMap<String,User> usersMap = new HashMap<String,User>();
+	
+	
+	public static void createUsers() {
+		User u1= new User("Nani1","Nani@1");
+		User u2= new User("Nani2","Nani@2");
+		User u3= new User("Nani3","Nani@3");
+		Collections.addAll(usersList, u1,u2,u3);
+		for(int i=0;i<usersList.size();i++) {
+			usersMap.put(usersList.get(i).getUserId(), usersList.get(i));
+		}
+
+		
+	}
+	@RequestMapping(value="/display",method=RequestMethod.POST)
+	public String createEmployee(@RequestBody String name ){
+//		String username=name.split("&")[0].split("=")[1];
+//		String password=name.split("&")[1].split("=")[1];
+//		if(username.equals("goutham") && password.equals("1111") ) {
+//			return "Successfully Logged in";
+//		}
+//		else {
+//			return "Invalid Credentials";
+//		}
+		
+		createUsers();
+		String username=name.split("&")[0].split("=")[1];
+		String password=name.split("&")[1].split("=")[1];
+		
+		System.out.println(usersMap.get(username).getPassword());
+		System.out.println(password);
+		
+		if(usersMap.get(username).getPassword().equals(password) ) {
+			return "Successfully Logged in";
+		}
+		else {
+			return "Invalid Credentials";
+		}
+		
+		
+		
+	}
+}

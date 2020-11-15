@@ -1,0 +1,39 @@
+package com.sunsoft;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloWorldController {
+	
+	static ArrayList<Student> stu = new ArrayList<Student>();
+	
+	@RequestMapping("/create")
+	public String addUser(HttpServletRequest request,HttpServletResponse res,Model m) {
+		String name=request.getParameter("name");
+		int id=Integer.parseInt(request.getParameter("id"));
+		int marks=Integer.parseInt(request.getParameter("marks"));
+		Student I = new Student(id,name,marks);
+		this.stu.add(I);
+		return "adduser";
+	}
+	
+	@RequestMapping("/display")
+	public String showUser() {
+		for(int i=0;i<this.stu.size();i++) {
+			System.out.println("Name is :"+ this.stu.get(i).getName());
+			System.out.println("Policy is :"+ this.stu.get(i).getId());
+			System.out.println("Cost is :"+ this.stu.get(i).getMarks());
+		}
+		
+		return "submitpage";
+	}
+	
+
+}

@@ -1,0 +1,11 @@
+package com.sunsoft;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+@Controller
+public class WelcomeWorldController {
+	@RequestMapping("/welcome/{id1}")
+	public String helloWorld(@RequestParam  ) {
+		
+	}
+}

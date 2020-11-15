@@ -1,0 +1,14 @@
+package com.sunsoft;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class HelloWorldController {
+	@RequestMapping("/hello")
+	public String helloWorld(Model m) {
+		String message = "First MVC";
+		m.addAttribute("message",message);
+		
+		return "hellopage";
+	}
+}

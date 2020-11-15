@@ -1,0 +1,11 @@
+
+<h2>Students CRUD</h2>
+
+<a href="insert" > Insert </a>
+
+<a href="display"> Display Students </a>
+
+<a href="update" >Update Marks </a>
+
+
+<a href="delete" >Delete a Student  </a>

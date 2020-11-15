@@ -1,0 +1,2 @@
+User added
+<jsp:include page="/adduser.jsp"></jsp:include>

@@ -1,0 +1,8 @@
+Users submitted
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
+<c:forEach var="emp" items="${ins}">
+		
+			<li>${emp}</li>
+			
+		</c:forEach>

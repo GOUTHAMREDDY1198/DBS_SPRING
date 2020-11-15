@@ -1,0 +1,51 @@
+package com.goutham.common.controller;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.goutham.common.model.Library;
+
+
+@RestController
+@RequestMapping("/Electricity")
+public class LibraryController {
+	
+	static ArrayList <Library> users = new ArrayList<Library>();
+	static HashMap<Integer,Library> hm1 = new HashMap<Integer,Library>();
+
+	public static void createUsers() {
+		Library e1= new Library (1,"It started with a friend request","Sudeep Nagarkar");
+		Library e2 =new Library (2,"The shiva Trialgy","20/11/2020");
+		Library e3= new Library (3,"One Indian girl","30/11/2020");
+		Collections.addAll(users,e1,e2,e3);
+		
+		for(int i=0;i<users.size();i++) {
+			hm1.put(users.get(i).getId(),users.get(i));
+		}
+	}
+	
+		@RequestMapping(value="/display",method=RequestMethod.POST)
+//		@ResponseBody
+		public String getMovie(@RequestBody String value) {
+			createUsers();
+			Electricity user= null;
+			int id = Integer.parseInt(value.split("=")[1]);
+			if(hm1.containsKey(id)) {
+				user = hm1.get(id);
+			}
+			
+			user.setTotal_cost(user.getUnits_consumed());
+			
+			String message= "Hello user "+user.getId()+" Your bill for this month is RS: "+user.getTotal_cost()+", which must be paid before "+user.getDeadline() ;
+			
+			return message;
+		
+		}
+	
+}

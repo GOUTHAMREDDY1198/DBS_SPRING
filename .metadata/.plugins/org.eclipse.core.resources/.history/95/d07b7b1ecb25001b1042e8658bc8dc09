@@ -1,0 +1,13 @@
+package com.goutham.common.model;
+
+
+public class Electricity {
+	private int id;
+	
+	private int units_consumed;
+	private int cost_per_unit;
+	private int total_cost;
+	private String deadline;
+	
+	
+}

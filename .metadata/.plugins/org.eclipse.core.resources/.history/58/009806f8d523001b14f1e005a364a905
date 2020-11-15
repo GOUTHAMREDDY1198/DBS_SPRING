@@ -1,0 +1,31 @@
+package com.sunsoft;
+
+import java.util.ArrayList;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class HelloWorldController {
+	
+	ArrayList<Insurance> ins = new ArrayList<Insurance>();
+	@RequestMapping("/add")
+	public String addUser(HttpServletRequest request,HttpServletResponse res,Model m) {
+		String name=request.getParameter("name");
+		String policy=request.getParameter("policy");
+		int cost=Integer.parseInt(request.getParameter("cost"));
+		Insurance I = new Insurance(name,policy,cost);
+		return "adduser";
+	}
+	
+	@RequestMapping("/sub")
+	public String showUser() {
+		return "submitpage";
+	}
+	
+
+}
