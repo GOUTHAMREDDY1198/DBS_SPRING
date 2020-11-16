@@ -3,7 +3,6 @@
   <module moduleId="org.eclipse.jst.jee.server:RESTAss-4" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:RestEmployee" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:RESTAss-3" serverId="Tomcat v8.5 Server at localhost"/>
-  <module moduleId="org.eclipse.jst.jee.server:Hello" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:RESTAss-6" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:RESTAss-5" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:Insurance" serverId="Tomcat v8.5 Server at localhost"/>
@@ -11,4 +10,7 @@
   <module moduleId="org.eclipse.jst.j2ee.server:Maven" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:RESTAss-1" serverId="Tomcat v8.5 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:MvcAss5" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:RESTAss-7" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Greatuser" serverId="Tomcat v8.5 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:Hello" serverId="Tomcat v8.5 Server at localhost"/>
 </modules>

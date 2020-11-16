@@ -2,12 +2,12 @@
 <section name="Workbench">
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item key="ShowStatusLine" value="true"/>
-		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=JavaxGUI/src&amp;lt;{LabelTest.java[LabelTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=JavaxGUI/src&amp;lt;{LabelTest.java[LabelTest&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=demo/C:\/Users\/home\/.m2\/repository\/org\/apache\/tomcat\/embed\/tomcat-embed-core\/9.0.39\/tomcat-embed-core-9.0.39.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.apache.tomcat.embed=/=/maven.artifactId=/tomcat-embed-core=/=/maven.version=/9.0.39=/=/maven.scope=/compile=/&amp;lt;org.apache.catalina.startup(Bootstrap.class[Bootstrap&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HibernateAssignment/src&amp;lt;insurance{Client.java[Client&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=StudentOneToOne/src&amp;lt;{Client.java[Client&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=One-To-Many/src&amp;lt;{Client.java[Client&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=Many-To-Many/D:\/DBS_Spring_training\/Hibernet\/hibernate jars\/antlr-2.7.7.jar&amp;lt;antlr.debug.misc(ASTFrame.class[ASTFrame&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HibernateAss-4/D:\/DBS_Spring_training\/Hibernet\/hibernate jars\/antlr-2.7.7.jar&amp;lt;antlr.debug.misc(ASTFrame.class[ASTFrame&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HibernateAss-4/src&amp;lt;{Client.java[Client&lt;/infoNode&gt;&#x0D;&#x0A;&lt;infoNode&gt;=HAss-5/src&amp;lt;{Client.java[Client&lt;/infoNode&gt;&#x0D;&#x0A;&lt;/historyRootNode&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
 		<section name="DialogBoundsSettings">
-			<item key="DIALOG_HEIGHT" value="500"/>
-			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_HEIGHT" value="579"/>
+			<item key="DIALOG_WIDTH" value="606"/>
 			<item key="DIALOG_X_ORIGIN" value="100"/>
-			<item key="DIALOG_Y_ORIGIN" value="-13"/>
+			<item key="DIALOG_Y_ORIGIN" value="9"/>
 			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 		</section>
 	</section>
